@@ -1,5 +1,5 @@
 {
-  "name": "angular-gridster-ivy",
+  "name": "@markusdresch/angular-gridster-ivy",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.0-rc.6",
