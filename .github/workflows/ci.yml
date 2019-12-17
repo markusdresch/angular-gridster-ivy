@@ -11,7 +11,9 @@ jobs:
     - uses: actions/checkout@v1
     - name: npm install
       run: npm i
-    - name: build library
+    - name: build and publish library
       run: |
         npm run build:library
         npm publish dist/angular-gridster-ivy
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
