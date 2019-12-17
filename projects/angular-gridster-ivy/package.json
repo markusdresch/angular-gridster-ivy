@@ -1,5 +1,5 @@
 {
-  "name": "@markusdresch/angular-gridster-ivy",
+  "name": "angular-gridster-ivy",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.0-rc.6",
@@ -7,6 +7,6 @@
     "tslib": "^1.10.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/markusdresch"
   }
 }
