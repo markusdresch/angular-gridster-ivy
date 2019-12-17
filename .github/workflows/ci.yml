@@ -13,4 +13,4 @@ jobs:
       run: npm i
     - name: build library
       run: |
-        ng build angular-gridster-ivy --prod
+        npm run build:library
