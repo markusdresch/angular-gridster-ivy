@@ -9,11 +9,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: npm install
       run: npm i
-    - name: build and publish library
-      run: |
-        npm run build:library
-        npm publish dist/angular-gridster-ivy
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # - name: setup
+    #   run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+
+    - name: build library
+      run: npm run build:library
+
+    # - name: publish library
+    #   run: npm publish dist/angular-gridster-ivy
+    #   env:
+    #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
